@@ -1,0 +1,71 @@
+# makes all root dirs, /etc/os-release,/etc/slackware-version
+https://slackware.uk/slackware/slackware64/slackware64/a/aaa_base-15.0-x86_64-3.txz
+
+# low level pkg manager only offline, just a bash script
+https://slackware.uk/slackware/slackware64/slackware64/a/pkgtools-15.0-noarch-42.txz
+
+# uses pkgtools, online download, just a bash script
+https://slackware.uk/slackware/slackware64/slackware64/ap/slackpkg-15.0.10-noarch-1.txz
+
+# deps for bash
+https://slackware.uk/slackware/slackware64/slackware64/a/aaa_glibc-solibs-2.33-x86_64-5.txz
+https://slackware.uk/slackware/slackware64/slackware64/a/bash-5.1.016-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/l/ncurses-6.3-x86_64-1.txz
+
+# for slackpkg
+# needs date,coreutils(cat,date,cut,mkdir,rm),sed,grep,libgmp.so.10,libpcre.so.1,pcre,which,awk,gpg,wget,grep
+https://slackware.uk/slackware/slackware64/slackware64/a/coreutils-9.0-x86_64-3.txz
+https://slackware.uk/slackware/slackware64/slackware64/a/sed-4.8-x86_64-3.txz
+https://slackware.uk/slackware/slackware64/slackware64/a/grep-3.7-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/l/gmp-6.2.1-x86_64-3.txz
+https://slackware.uk/slackware/slackware64/slackware64/l/pcre-8.45-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/a/which-2.21-x86_64-4.txz
+https://slackware.uk/slackware/slackware64/slackware64/a/gawk-5.1.1-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/n/gnupg-1.4.23-x86_64-4.txz
+https://slackware.uk/slackware/slackware64/slackware64/n/wget-1.21.2-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/a/grep-3.7-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/a/xz-5.2.5-x86_64-3.txz
+
+# for sed : libacl.so.1,libattr.so.1
+https://slackware.uk/slackware/slackware64/slackware64/a/acl-2.3.1-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/a/attr-2.5.1-x86_64-1.txz 
+
+# for wget : libunistring.so.2,libpcre2-8.so.0,libuuid.so.1,libidn2.so.0,libssl.so.1.1,libz.so.1,libpsl.so.5:
+https://slackware.uk/slackware/slackware64/slackware64/l/libunistring-0.9.10-x86_64-3.txz 
+https://slackware.uk/slackware/slackware64/slackware64/l/pcre2-10.39-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/a/util-linux-2.37.3-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/l/libidn2-2.3.2-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/a/openssl-solibs-1.1.1m-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/l/zlib-1.2.11-x86_64-4.txz
+https://slackware.uk/slackware/slackware64/slackware64/l/libpsl-0.21.1-x86_64-4.txz
+https://mirrors.slackware.com/slackware/slackware-current/slackware/n/ca-certificates-20250131-noarch-1.txz
+
+#for gpg libusb-0.1.so.4,
+https://slackware.uk/slackware/slackware64/slackware64/a/bzip2-1.0.8-x86_64-3.txz
+https://slackware.uk/slackware/slackware64/slackware64/l/readline-8.1.002-x86_64-1.txz 
+https://slackware.uk/slackware/slackware64/slackware64/l/libusb-1.0.24-x86_64-4.txz
+https://slackware.uk/slackware/slackware64/slackware64/l/libusb-compat-0.1.7-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/a/eudev-3.2.11-x86_64-1.txz
+
+# for update-ca-certificates
+https://slackware.uk/slackware/slackware64/slackware64/a/dcron-4.5-x86_64-11.txz
+https://slackware.uk/slackware/slackware64/slackware64/n/openssl-1.1.1m-x86_64-1.txz
+
+#udev
+https://slackware.uk/slackware/slackware64/slackware64/a/kmod-29-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/l/zstd-1.5.2-x86_64-1.txz
+
+
+# coreutils
+https://slackware.uk/slackware/slackware64/slackware64/l/libcap-2.63-x86_64-1.txz
+
+https://slackware.uk/slackware/slackware64/slackware64/a/aaa_terminfo-6.3-x86_64-1.txz
+https://slackware.uk/slackware/slackware64/slackware64/a/aaa_libraries-15.0-x86_64-19.txz
+
+
+sudo sed -i 's/^# \(https:\/\/mirrors\.slackware\.com\/slackware\/slackware64-15\.0\/\)/\1/' /mnt/etc/slackpkg/mirrors
+echo "nameserver 1.1.1.1" | sudo tee -a /mnt/etc/resolv.conf
+
+
+tar xf pkgtools-15.0-noarch-42.txz
+sudo ./sbin/installpkg --root /mnt   pkgtools-15.0-noarch-42.txz 
